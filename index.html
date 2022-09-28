@@ -63,7 +63,7 @@ p {line-height: 2}
 }
 .modal-content .close{
     color: #fff;
-    background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
+    background: linear-gradient(to right, #2d4628, #35cf06, #2d4628);
     font-size: 25px;
     font-weight: 400;
     text-shadow: none;
@@ -87,7 +87,7 @@ p {line-height: 2}
 .close:focus{ outline: none; }
 .modal-body{ padding: 60px 40px 40px !important; }
 .modal-body .title{
-    color: #026fd4;
+    color: #33d402;
     font-size: 33px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -104,6 +104,14 @@ p {line-height: 2}
     position: relative;
 }
 .modal-body .input-icon{
+    color: #777;
+    font-size: 18px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+.modal-body .select-icon{
     color: #777;
     font-size: 18px;
     transform: translateY(-50%);
@@ -137,6 +145,9 @@ p {line-height: 2}
 .form-group.checkbox input[type=checkbox]{
     margin-left: 0;
 }
+.form-group.checkbox select[type=checkbox]{
+    margin-left: 0;
+}
 .modal-body .forgot-pass{
     color: #7F7FD5;
     font-size: 13px;
@@ -153,7 +164,7 @@ p {line-height: 2}
 }
 .modal-content .modal-body .btn{
     color: #fff;
-    background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
+    background: linear-gradient(to right, #425a37, #43f177, #425a37);
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -246,29 +257,48 @@ p {line-height: 2}
 			<div class="modal-content clearfix">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 				<div class="modal-body">
+
+
 					<h3 class="title">RSVP</h3>
 					<p class="description">Please fill out</p>
+
+                    <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='./index.hmlt';}"></iframe>
+                    
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdHMVsqHZjFAwKyZL5EfLnMytjvFIpXOA9J9z-oFww9_O2Zig/formResponse" method="post" target="hidden_iframe"
+                    onsubmit="submitted=true;">
+
+
 					<div class="form-group">
-						<span class="input-icon"><i class="fa fa-user"></i></span>
-						<input type="email" class="form-control" placeholder="Full Name">
+						<input type="Name" class="form-control" name="entry.554014315" placeholder="Full Name">
 					</div>
+                    <div class="form-group">
+                        <select class="form-control" name="entry.1301571352" id="cars">
+                        <option value="Yes!!">Yes!!</option>
+                        <option value="No, Sorry..">No, Sorry</option>
+                      </select>
+                    </div>
+
 					<div class="form-group">
-						<span class="input-icon"><i class="fas fa-key"></i></span>
-						<input type="password" class="form-control" placeholder="Will you be present?">
+						<input type="phone" class="form-control" name="entry.153508381" placeholder="Phone Number">
 					</div>
+
+                    <div class="form-group">
+                        <select class="form-control" name="entry.1895863924" id="How Many">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+
+                      </select>
+                    </div>
 					<div class="form-group">
-						<span class="input-icon"><i class="fas fa-key"></i></span>
-						<input type="password" class="form-control" placeholder="Phone Number">
+						<input type="Guess names" class="form-control" name="entry.642239702" placeholder="List all Guest in party name,name,name">
 					</div>
-					<div class="form-group">
-						<span class="input-icon"><i class="fas fa-key"></i></span>
-						<input type="password" class="form-control" placeholder="Number of Guess">
-					</div>
-					<div class="form-group">
-						<span class="input-icon"><i class="fas fa-key"></i></span>
-						<input type="password" class="form-control" placeholder="List all Guest in party">
-					</div>
-					<button class="btn">Sumit</button>
+
+					<button type="submit" value="Send" class="btn">Submit</button>
+                </form>
 				</div>
 			</div>
 		</div>
@@ -315,7 +345,7 @@ p {line-height: 2}
 <footer class="w3-center w3-black w3-padding-16">
   <p>Powered by <a href="https://www.WanderlustTech.com" title="W3.CSS" target="WanderlustTech" class="w3-hover-text-green">WanderlustTech</a></p>
 </footer>
-<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
 </body>
 <script>/*! JS Bat 2013 - v1.2 - Eric Grange - www.delphitools.info */
@@ -869,5 +899,3 @@ function A(){
 
 
 </html>
-
-
